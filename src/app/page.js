@@ -25,13 +25,13 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
             <div className="lg:col-span-6">
               <p className="text-[11px] tracking-[0.24em] uppercase text-ink-500">
-                Harley Street • London
+                Cosmetic Treatments • London
               </p>
               <h1 className="mt-5 font-display text-display-md md:text-display-lg text-ink-950">
                 A quieter, more refined approach to aesthetics.
               </h1>
               <p className="mt-6 text-ink-700 leading-relaxed text-lg max-w-xl">
-                Explore premium treatments and connect with verified practitioners across Greater London — with an editorial, concierge-style experience.
+                Explore premium cosmetic treatments and connect with verified practitioners across Greater London — with a calm, concierge-style experience.
               </p>
 
               <div className="mt-10 flex flex-col sm:flex-row gap-4">
@@ -45,8 +45,8 @@ export default function HomePage() {
 
               <div className="mt-12 grid grid-cols-2 sm:grid-cols-3 gap-6 max-w-xl">
                 <div>
-                  <div className="font-display text-2xl text-ink-950">Harley St</div>
-                  <div className="mt-1 text-xs tracking-wide text-ink-500">Premium standard</div>
+                  <div className="font-display text-2xl text-ink-950">London</div>
+                  <div className="mt-1 text-xs tracking-wide text-ink-500">Citywide access</div>
                 </div>
                 <div>
                   <div className="font-display text-2xl text-ink-950">Verified</div>
@@ -73,9 +73,35 @@ export default function HomePage() {
               </div>
 
               <div className="mt-6 flex items-center justify-between text-xs text-ink-500">
-                <span>Discrete. Calm. Considered.</span>
-                <span className="tracking-[0.18em] uppercase">Since 152</span>
+                <span>Private consultations. Verified practitioners.</span>
+                <span className="tracking-[0.18em] uppercase">Cosmetic Treatment</span>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Intro */}
+      <section className="bg-porcelain-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-18">
+          <div className="max-w-3xl">
+            <p className="text-[11px] tracking-[0.24em] uppercase text-ink-500">Introduction</p>
+            <h2 className="mt-4 font-display text-display-sm md:text-display-md text-ink-950">
+              Cosmetic treatments, with clarity and restraint.
+            </h2>
+            <div className="mt-5 space-y-4 text-ink-700 leading-relaxed">
+              <p>
+                Cosmetic Treatment helps you explore non-surgical aesthetic options and connect with trusted practitioners across London.
+                Rather than trawling through endless clinic pages, you can compare treatments, understand typical pricing, and request a consultation in a single, calm flow.
+              </p>
+              <p>
+                Whether you&apos;re looking for subtle anti-wrinkle treatments, skin rejuvenation, or injectables, we focus on helping you make an informed choice.
+                We keep the experience discreet, straightforward, and designed around the standard you expect from premium providers.
+              </p>
+              <p>
+                If you already know what you want, you can go straight to a treatment and request a quote.
+                If you&apos;re still deciding, our guides and comparisons help you move forward with confidence.
+              </p>
             </div>
           </div>
         </div>
@@ -113,31 +139,32 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Trust / Editorial block */}
+      {/* Why choose us */}
       <section className="bg-porcelain-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-18">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
             <div className="lg:col-span-5">
-              <p className="text-[11px] tracking-[0.24em] uppercase text-ink-500">Our standard</p>
+              <p className="text-[11px] tracking-[0.24em] uppercase text-ink-500">Why choose us</p>
               <h2 className="mt-4 font-display text-display-sm md:text-display-md text-ink-950">
-                Clinic-grade credibility, presented quietly.
+                Premium, not performative.
               </h2>
               <p className="mt-4 text-ink-700 leading-relaxed">
-                We prioritise clarity, safety and practitioner quality — with a premium experience that respects your time.
+                We combine an editorial browsing experience with practical, trust-first information.
+                The goal is simple: help you find the right treatment and the right provider, without the noise.
               </p>
 
               <div className="mt-8 space-y-4">
                 <div className="flex items-start gap-3">
                   <span className="mt-1 w-1.5 h-1.5 rounded-full bg-champagne-500" />
-                  <p className="text-sm text-ink-700 leading-relaxed">Verified practitioners and transparent guidance.</p>
+                  <p className="text-sm text-ink-700 leading-relaxed">Trust signals up front: credentials, reviews and clear expectations.</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="mt-1 w-1.5 h-1.5 rounded-full bg-champagne-500" />
-                  <p className="text-sm text-ink-700 leading-relaxed">A consultation flow designed to feel discreet.</p>
+                  <p className="text-sm text-ink-700 leading-relaxed">Discreet consultation requests — built for privacy and ease.</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="mt-1 w-1.5 h-1.5 rounded-full bg-champagne-500" />
-                  <p className="text-sm text-ink-700 leading-relaxed">Premium layouts, mobile-first, and lightweight.</p>
+                  <p className="text-sm text-ink-700 leading-relaxed">A calm, mobile-first experience with premium-level polish.</p>
                 </div>
               </div>
 
@@ -274,12 +301,12 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Journal */}
+      {/* Blog */}
       <section className="bg-porcelain-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-18">
           <div className="flex items-end justify-between gap-6">
             <div className="max-w-2xl">
-              <p className="text-[11px] tracking-[0.24em] uppercase text-ink-500">Journal</p>
+              <p className="text-[11px] tracking-[0.24em] uppercase text-ink-500">Blog</p>
               <h2 className="mt-4 font-display text-display-sm md:text-display-md text-ink-950">
                 Notes on modern aesthetics.
               </h2>
