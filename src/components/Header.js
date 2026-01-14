@@ -45,16 +45,23 @@ export default function Header() {
           <div className="h-18 flex items-center justify-between">
             <Link href="/" className="group flex items-baseline gap-3 py-4">
               <span className="font-display text-xl md:text-2xl text-ink-950">
-                152 Harley Street
+                Cosmetic Treatment
               </span>
               <span className="hidden sm:inline text-[12px] tracking-[0.18em] uppercase text-ink-500 group-hover:text-ink-700 transition-colors">
-                Aesthetic Clinic
+                Aesthetics • London
               </span>
             </Link>
 
             {/* Desktop nav */}
             <nav className="hidden lg:flex items-center gap-8">
-              <div className="relative">
+              <div
+                className="relative"
+                onMouseEnter={() => {
+                  setServicesOpen(true);
+                  setLocationsOpen(false);
+                }}
+                onMouseLeave={() => setServicesOpen(false)}
+              >
                 <button
                   type="button"
                   onClick={() => {
@@ -103,7 +110,14 @@ export default function Header() {
                 )}
               </div>
 
-              <div className="relative">
+              <div
+                className="relative"
+                onMouseEnter={() => {
+                  setLocationsOpen(true);
+                  setServicesOpen(false);
+                }}
+                onMouseLeave={() => setLocationsOpen(false)}
+              >
                 <button
                   type="button"
                   onClick={() => {
@@ -150,7 +164,7 @@ export default function Header() {
               </div>
 
               <NavLink href="/reviews">Reviews</NavLink>
-              <NavLink href="/blog">Journal</NavLink>
+              <NavLink href="/blog">Blog</NavLink>
               <NavLink href="/contact">Contact</NavLink>
 
               <Link href="/free-quote" className="btn btn-primary">
@@ -187,7 +201,7 @@ export default function Header() {
                 Reviews
               </Link>
               <Link href="/blog" className="block text-sm text-ink-900" onClick={() => setMobileOpen(false)}>
-                Journal
+                Blog
               </Link>
               <Link href="/contact" className="block text-sm text-ink-900" onClick={() => setMobileOpen(false)}>
                 Contact
